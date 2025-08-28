@@ -34,15 +34,15 @@
 
 #### CLASSROOMS:
 
-| classroom_number | classroom_description |
-| ---------------- | --------------------: |
-| A101             |          Web Frontend |
-| A102             |           Web Backend |
-| A103             |     Desarrollo Mobile |
+| classroom_number |            cource |
+| ---------------- | ----------------: |
+| A101             |      Web Frontend |
+| A102             |       Web Backend |
+| A103             | Desarrollo Mobile |
 
 #### COURSES:
 
-| id_course | classroom         |      course_name |
+| id_lesson | cource            |           lesson |
 | --------- | ----------------- | ---------------: |
 | 1         | Web Frontend      |             HTML |
 | 2         | Web Frontend      |              CSS |
@@ -73,12 +73,12 @@ string cource_student FK
 
 CLASSROOMS {
 string cource PK
-int id_classroom 
+string classroom_number 
 }
 
 COURSES {
     int id_lesson PK
-    string course_name
+    string course
     string lesson FK
 }
 
